@@ -13,7 +13,7 @@ public class App
     {
     	ProcessBuilder processBuilder = new ProcessBuilder();
     	InputStream stdout = null;
-    	String[] cmd = {"bash", "-c", "opt/vc/bin/vcgencmd measure_temp"};
+    	String[] cmd = {"/opt/vc/bin/vcgencmd", "measure_temp"};
     	String[] ret;
     	String s = null;
     	
