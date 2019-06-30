@@ -11,8 +11,6 @@ public class App
     public static void main(String[] args )
     {
         int soc_temp = temp_check.temp_check();
-
-
         System.out.println(soc_temp);
     }
 }

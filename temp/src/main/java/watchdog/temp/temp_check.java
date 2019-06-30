@@ -22,11 +22,9 @@ public class temp_check {
 			s = out.readLine();
 			Pattern p = Pattern.compile("\\d+");
 			Matcher m = p.matcher(s);
-				while (m.find()){
-					temprature = Integer.parseInt(m.group(0));
-					System.out.println(temprature);
+			temprature = Integer.parseInt(m.group(0));
+			System.out.println(temprature);
 
-			}
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
