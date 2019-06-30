@@ -20,12 +20,7 @@ public class temp_check {
 			stdout = process.getInputStream ();
 			BufferedReader out = new BufferedReader (new InputStreamReader (stdout));  
 			s = out.readLine();
-			Pattern p = Pattern.compile("\\d+");
-			Matcher m = p.matcher(s);
-				while (m.find()){
-					temprature = Integer.parseInt(m.group());
-
-			}
+			temprature = Integer.parseInt(s.replaceAll("[A-Za-z\\s]+", ""));
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
