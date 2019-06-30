@@ -7,7 +7,7 @@ import java.util.regex.Pattern;
 public class temp_check {
 
 	public static int temp_check() {
-		int temprature = -10;
+		int temprature = 0;
 		ProcessBuilder processBuilder = new ProcessBuilder();
     	InputStream stdout = null;
     	String[] cmd = {"/opt/vc/bin/vcgencmd", "measure_temp"};
@@ -22,9 +22,10 @@ public class temp_check {
 			s = out.readLine();
 			Pattern p = Pattern.compile("\\d+");
 			Matcher m = p.matcher(s);
-			temprature = Integer.parseInt(m.group(0));
-			System.out.println(temprature);
+				while (m.find()){
+					temprature = Integer.parseInt(m.group(0));
 
+			}
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
