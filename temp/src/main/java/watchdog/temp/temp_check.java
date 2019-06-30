@@ -6,8 +6,8 @@ import java.util.regex.Pattern;
 
 public class temp_check {
 
-	public static int temp_check() {
-		int temprature = 0;
+	public static float temp_check() {
+		float temprature = 0;
 		ProcessBuilder processBuilder = new ProcessBuilder();
     	InputStream stdout = null;
     	String[] cmd = {"/opt/vc/bin/vcgencmd", "measure_temp"};
@@ -20,7 +20,7 @@ public class temp_check {
 			stdout = process.getInputStream ();
 			BufferedReader out = new BufferedReader (new InputStreamReader (stdout));  
 			s = out.readLine();
-			temprature = Integer.parseInt(s.replaceAll("[^\\d.]", "" ));
+			temprature = Float.parseFloat(s.replaceAll("[^\\d.]", "" ));
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
