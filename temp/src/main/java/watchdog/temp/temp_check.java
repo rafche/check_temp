@@ -23,7 +23,7 @@ public class temp_check {
 			Pattern p = Pattern.compile("\\d+");
 			Matcher m = p.matcher(s);
 				while (m.find()){
-					temprature = Integer.parseInt(m.group(0));
+					temprature = Integer.parseInt(m.group());
 
 			}
 		} catch (IOException e) {
