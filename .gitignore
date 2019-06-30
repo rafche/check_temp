@@ -3,3 +3,7 @@
 temp/\.project
 
 *.prefs
+
+temp/\.idea/
+
+temp/temp\.iml
