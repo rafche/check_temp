@@ -1,5 +1,4 @@
 package watchdog.temp;
-
 import java.io.*;
 
 public class temp_check {

@@ -10,7 +10,9 @@ public class App
 
     public static void main(String[] args )
     {
-        temp_check soc_temp = new temp_check();
-        System.out.println(soc_temp.get_temp());
+    	for(int i = 0; i < 50; i++) {
+			temp_check soc_temp = new temp_check();
+			System.out.println(soc_temp.get_temp());
+    	}
     }
 }
