@@ -10,7 +10,7 @@ public class App
 
     public static void main(String[] args )
     {
-    	for(int i = 0; i < 50; i++) {
+    	while (true){
 			temp_check soc_temp = new temp_check();
 			System.out.println(soc_temp.get_temp());
     	}
