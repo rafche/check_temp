@@ -10,7 +10,7 @@ public class App
 
     public static void main(String[] args )
     {
-        float soc_temp = temp_check.temp_check();
-        System.out.println(soc_temp);
+        temp_check soc_temp = new temp_check();
+        System.out.println(soc_temp.get_temp());
     }
 }
