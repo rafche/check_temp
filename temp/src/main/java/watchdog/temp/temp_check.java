@@ -6,7 +6,7 @@ public class temp_check {
 
 	private float temprature = 0;
 
-	public void temp_check() {
+	public temp_check() {
 		ProcessBuilder processBuilder = new ProcessBuilder();
 		InputStream stdout = null;
 		String[] cmd = {"/opt/vc/bin/vcgencmd", "measure_temp"};
