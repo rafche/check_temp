@@ -9,8 +9,7 @@ public class temp_check {
 		ProcessBuilder processBuilder = new ProcessBuilder();
 		InputStream stdout = null;
 		String[] cmd = {"/opt/vc/bin/vcgencmd", "measure_temp"};
-		String[] ret;
-		String s = null;
+		String s;
 
 		try {
 			processBuilder.command(cmd);
