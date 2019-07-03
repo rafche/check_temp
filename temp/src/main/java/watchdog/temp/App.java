@@ -14,8 +14,8 @@ public class App
 
     public static void main(String[] args )
     {
-		temp_check soc_temp = new temp_check();
-		System.out.println(soc_temp.get_temp());
+//		temp_check soc_temp = new temp_check();
+//		System.out.println(soc_temp.get_temp());
 		Connection connection = db_conn.getConnection();
 
 		try {

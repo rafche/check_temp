@@ -15,8 +15,8 @@ public class db_conn {
     {
         try
         {
-            Class.forName("com.mysql.jdbc.Driver");
-            con=DriverManager.getConnection("jdbc:mariadb://10.0.0.2/"+db_name+"?user="+user_name);
+            Class.forName("org.mariadb.jdbc.Driver");
+            con = DriverManager.getConnection("jdbc:mariadb://10.0.0.2/"+db_name+"?user="+user_name);
         }
         catch(Exception e)
         {
