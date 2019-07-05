@@ -19,7 +19,7 @@ public class App
 
 		try {
             Statement stmt = connection.createStatement();
-            stmt.executeUpdate("Insert into production.visitors (temp, timestamp) VALUES ("+soc_temp.get_temp() +", NOW())");
+            stmt.executeUpdate("Insert into logger.temp(temp, timestamp) VALUES ("+soc_temp.get_temp() +", NOW())");
             stmt.close();
             connection.close();
         }
