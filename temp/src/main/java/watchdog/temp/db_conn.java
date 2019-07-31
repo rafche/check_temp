@@ -8,10 +8,10 @@ public class db_conn {
     {
         if (con != null) return con;
         // get db, user, pass from settings file
-        return getConnection("logger", "root");
+        return getConnection("logger", "root", "");
     }
 
-    private static Connection getConnection(String db_name,String user_name)
+    public static Connection getConnection(String db_name,String user_name, String password)
     {
         try
         {
